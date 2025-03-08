@@ -6,6 +6,7 @@
     <link rel="icon" href="images/favicon.ico" sizes="128x128">
     <title>March 6th</title>
     <link rel="stylesheet" href="css/substyle.css">
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com;">
 <body>
     
     <div class="container">
@@ -19,7 +20,10 @@
     <div class="container">
         <div class="glass-card">
             <h2>Test video</h2>
-            <video src="videos/Taco Bell_1.mp4" class="card-image" controls>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/99X9dRuGXdg" 
+        frameborder="0" allow="autoplay" allowfullscreen control class="card-image">
+            </iframe>
+            
             <br><a href="index.html"><button class="cta-button">Take me back to the calendar</button></a>
         </div>
     </div>
