@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #bc987e;
+    background-image: url('../images/logo.png'); /* Path to your logo */
+    background-size: 425px 425px; /* Adjust size to control spacing */
+    background-repeat: repeat; /* Ensures the image repeats */
+    background-position: top left; /* Starts tiling from the top-left */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Main container to keep cards separate from background */
+.container {
+    display: flex;
+    justify-content: center; /* Centers all cards */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    margin: 20px; /* Spacing between cards */
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass Card Styling */
+.glass-card {
+    width: 500px; /* Adjust as needed */
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);     
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.glass-card:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+font-size: 20px;
+
+}
+
+/* Styling for images inside the glass card */
+.card-image {
+    width: 100%; /* Makes image fit the card width */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px; /* Slight rounding for a softer look */
+    margin-bottom: 15px; /* Adds space between the image and text */
+}
+
+/* Button Styling */
+.cta-button {
+    background: slategray;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
