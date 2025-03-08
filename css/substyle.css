@@ -54,7 +54,7 @@ font-size: 20px;
 /* Styling for images inside the glass card */
 .card-image {
     width: 100%; /* Makes image fit the card width */
-    height: auto; /* Keeps aspect ratio */
+    height: 300px; /* Keeps aspect ratio */
     border-radius: 10px; /* Slight rounding for a softer look */
     margin-bottom: 15px; /* Adds space between the image and text */
 }
