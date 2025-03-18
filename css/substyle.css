@@ -40,11 +40,28 @@ body {
     color: white;
     transition: transform 0.3s ease-in-out;
 }
+.zoom-card {
+    width: 500px; /* Adjust as needed */
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);     
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-card:hover {
+    transform: scale(1.3);
+}
 
 /* Hover Effect */
 .glass-card:hover {
     transform: scale(1.05);
 }
+
+
 
 .card-text {
 font-size: 20px;
@@ -54,10 +71,11 @@ font-size: 20px;
 /* Styling for images inside the glass card */
 .card-image {
     width: 100%; /* Makes image fit the card width */
-    height: 300px; /* Keeps aspect ratio */
+    height: 75%; /* Keeps aspect ratio */
     border-radius: 10px; /* Slight rounding for a softer look */
     margin-bottom: 15px; /* Adds space between the image and text */
 }
+
 
 /* Button Styling */
 .cta-button {
