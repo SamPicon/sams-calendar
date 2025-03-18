@@ -11,9 +11,10 @@ body {
 }
 
 h1 {
-    color: floralwhite;
+    color: white;
     font-family: "Orbitron", sans-serif;
     margin-top: 20px;
+    font-size: 50px;
 }
 
 .calendar {
@@ -37,6 +38,7 @@ h1 {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     position: relative; /* Ensures child elements like .preview are positioned relative to this */
     overflow: hidden; /* Prevents overflow issues with the preview */
+    font-size: 20px;
 }
 
 .day:hover {
