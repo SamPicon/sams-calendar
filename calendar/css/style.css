@@ -1,0 +1,82 @@
+body {
+    font-family: "PT Serif", sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #bc987e;
+    background-image: url("../images/logo.png");
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed */
+    pointer-events: auto;
+}
+
+h1 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px; /* Adds spacing inside the grid */
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 20px;
+    min-height: 120px;
+    display: flex;
+    align-items: center left; 
+    justify-content: center left;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    position: relative; /* Ensures child elements like .preview are positioned relative to this */
+    overflow: hidden; /* Prevents overflow issues with the preview */
+    font-size: 20px;
+}
+
+.day:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.05); /* Slightly increases size */
+}
+
+.day a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+    max-height: 100px; /* Adjusts video/image height */
+    object-fit: cover;
+}
+
+.preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures media fills the tile */
+    opacity: 0; /* Hides media initially */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.day:hover .preview {
+    opacity: 1; /* Shows media on hover */
+}
+
+.day:hover .day-number {
+    opacity: 0; /* Hides the number on hover */
+}
